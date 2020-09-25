@@ -31,7 +31,7 @@ namespace OpenCL.KernelCollection
 
         public override bool SatisfiesHostType(IPluginHost potentialHost)
         {
-            return ManifestReader.IsRegistered(Assembly.GetExecutingAssembly()) && base.SatisfiesHostType(potentialHost);
+            return !ManifestReader.IsRegistered(Assembly.GetExecutingAssembly()) && base.SatisfiesHostType(potentialHost);
         }
 
     }
