@@ -1,0 +1,4 @@
+name: open-cl-kernel-collection
+target: .\src\OpenCL.KernelCollection\bin\Debug\netstandard2.0\OpenCL.KernelCollection.dll
+#output: .\build\fl-debugger-core-plugins.zip
+depends: open-cl-kernel-collection
