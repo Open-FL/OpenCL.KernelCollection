@@ -1,5 +1,5 @@
 name: open-cl-kernel-collection
 target: .\src\OpenCL.KernelCollection\bin\Debug\netstandard2.0\OpenCL.KernelCollection.dll
-output: .\docs\latest\fl-debugger-core-plugins.zip
+output: .\docs\latest\open-cl-kernel-collection.zip
 origin: https://open-fl.github.io/OpenCL.KernelCollection/latest/info.txt
 flags: INFO_TO_OUTPUT
