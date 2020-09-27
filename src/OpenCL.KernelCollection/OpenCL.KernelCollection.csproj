@@ -1,9 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>0.0.0.1</Version>
+    <AssemblyVersion>0.0.1.1</AssemblyVersion>
+    <FileVersion>0.0.1.1</FileVersion>
   </PropertyGroup>
-
   <ItemGroup>
     <None Remove="resources\kernel\arrange.cl" />
     <None Remove="resources\kernel\blur.cl" />
@@ -43,7 +44,6 @@
     <None Remove="resources\kernel\utils\sample.cle" />
     <None Remove="resources\kernel\worley.cl" />
   </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="resources\kernel\arrange.cl" />
     <EmbeddedResource Include="resources\kernel\blur.cl" />
@@ -83,11 +83,9 @@
     <EmbeddedResource Include="resources\kernel\utils\sample.cle" />
     <EmbeddedResource Include="resources\kernel\worley.cl" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\deps\OpenCL.Wrapper\deps\Utility\src\Utility\Utility.csproj" />
     <ProjectReference Include="..\..\deps\OpenCL.Wrapper\src\OpenCL.Wrapper\OpenCL.Wrapper.csproj" />
     <ProjectReference Include="..\..\deps\PluginSystem\src\PluginSystem\PluginSystem.csproj" />
   </ItemGroup>
-
 </Project>
