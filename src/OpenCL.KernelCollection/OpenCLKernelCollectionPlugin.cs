@@ -14,11 +14,6 @@ namespace OpenCL.KernelCollection
     public class OpenCLKernelCollectionPlugin : APlugin<PluginSystemHost>
     {
 
-        public override bool IsMainPlugin => true;
-
-        public override bool HasIO => true;
-
-        public override string Name => "open-cl-kernel-collection";
 
 
         public override void OnLoad(PluginAssemblyPointer ptr)
