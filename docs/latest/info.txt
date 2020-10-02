@@ -1,1 +1,1 @@
-open-cl-kernel-collection|OpenCL.KernelCollection.dll|https://open-fl.github.io/OpenCL.KernelCollection/latest/info.txt|0.0.1.40|
+open-cl-kernel-collection|OpenCL.KernelCollection.dll|https://open-fl.github.io/OpenCL.KernelCollection/latest/info.txt|0.0.1.41|
