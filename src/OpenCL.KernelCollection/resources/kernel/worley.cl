@@ -24,7 +24,7 @@ float GetWorleyDistance(float3 point, float3 worleypoint, float pmax)
 	return value;
 }
 
-__kernel void worley(__global uchar *image, int3 dimensions, int channelCount, float maxValue, __global uchar* channelEnableState, __global uchar* arrayPositions, int poscount,  float max_distance)
+__kernel void worley(__global uchar *image, int3 dimensions, int channelCount, float maxValue, __global uchar* channelEnableState, __global uchar* arrayPositions, int poscount, float max_distance)
 {
 	int idx = get_global_id(0); //Index of the current pixel value beeing processed
 	int pixelIndex = idx / 4; //The "index" of the actual pixel(all rgba values of all pixels divided by 4)
