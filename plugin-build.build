@@ -1,5 +1,13 @@
+#Package Info
 name: open-cl-kernel-collection
-target: .\src\OpenCL.KernelCollection\bin\Debug\netstandard2.0\OpenCL.KernelCollection.dll
-output: .\docs\latest\open-cl-kernel-collection.zip
-origin: https://open-fl.github.io/OpenCL.KernelCollection/latest/info.txt
+project-name: OpenCL.KernelCollection
+branch: Debug
 flags: INFO_TO_OUTPUT
+
+#Build
+solution: .\src\%project-name%.sln
+buildcmd: dotnet build %solution% -c %branch%
+buildout: .\src\%project-name%\bin\%branch%\netstandard2.0
+target: %buildout%\%project-name%.dll
+output: .\docs\latest\%name%.zip
+origin: https://open-fl.github.io/%project-name%/latest/info.txt
