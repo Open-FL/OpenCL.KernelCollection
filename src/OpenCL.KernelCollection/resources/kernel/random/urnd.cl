@@ -8,7 +8,7 @@ __kernel void urnd_gpu(__global uchar* image, int3 dimensions, int channelCount,
 	{
 		return;
 	}
-    int2 rndstate = (int2)(seedA, seedB);
+    int2 rndstate = (int2)((seedA>>13) ^ (idx >> 5), seedB-(seedA^idx));
 
     uchar rndValue = random(&rndstate);
 
