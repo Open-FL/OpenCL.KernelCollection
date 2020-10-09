@@ -24,7 +24,7 @@ namespace Tests
             KernelDatabase db = new KernelDatabase(instance, "resources/kernel", DataVectorTypes.Uchar1);
 
             Assert.True(db.KernelNames.Count != 0);
-
+            Assert.Pass("Kernels Loaded: " + db.KernelNames.Count);
             db.Dispose();
             instance.Dispose();
         }

@@ -1,5 +1,6 @@
 #include ../utils/indexconversion.cle
-#include ../convert/gconvert_all.cl
+#include convert/gconvert.cle int3 float3
+#include convert/gconvert.cle float3 int3
 
 uchar Samplei(__global uchar* image, int idx)
 {
